@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1> WHILE. BREAK. CONTINUE.</h1>
+    <script>
+        
+    //1. Вывести # столько раз, сколько указал пользователь.
+       /* let count = prompt("Введите количество:", 100);
+        count = parseInt(count, 10);
+     
+        
+            let i = 0;
+            while (i < count) {
+          document.write('#');
+            i++;
+        }
+        
+       */
+      //2. Пользователь ввел число, а на экран вывелись все числа от введенного до 0.
+      /* let number = prompt("Input number:", 100);
+        number = parseInt(number, 10);
+     
+        
+            let i = number;
+            while (i >=0) {
+                document.write(i);
+            i--;
+        }
+        */
+//3. Запросить число и степень. Возвести число в указанную и вывести результат.
+       
+/* let number = prompt("Введите число :", 100);
+        number = parseInt(number, 10);
+ let degree=prompt("Введите степень :", 100);
+     degree  = parseInt(degree, 10);
+        
+     let result = 1;
+        let i = 0;
+
+        while (i < degree) {
+            result *= number;56+984174
+            |}""
+            3+
+            |}""
+            i++;|}""        }
+
+        document.write(result);
+        */
+        //4. Запросить 2 числа и найти все общие делители.
+        // let number1 = prompt("Введите число1 :", 100);
+        // number1 = parseInt(number1, 10);
+        // let number2 = prompt("Введите число2 :", 100);
+        // number2 = parseInt(number2, 10);
+
+       
+        // let i = 1;
+        // document.write("Общие делители: ");
+
+        // while (i <= number1 && i <= number2) {
+        //     if (number1 % i === 0 && number2 % i === 0) {
+        //         document.write(i + " ");
+        //     }
+        //     i++;
+        // }
+
+
+      //  5. Посчитать факториал введенного пользователем числа.
+
+//  let number = prompt("Введите число :", 100);
+//         number = parseInt(number, 10);
+//       let result = 1;
+//         let i = 1;
+
+//          while (i <= number ) {
+//             result *= i;
+//             i++;
+//         }
+//document.write(result)
+
+//1. Предлагать пользователю решить пример 2 + 2 * 2 до тех пор, пока он не решит его правильно.
+// let result= 0;
+//         do {
+//             result = +prompt("Введите результат 2+2*2:", 10);
+           
+//             if (result ==6)
+//                 break;
+            
+//         }
+//         while (true);
+//         document.write("Результат="+result);
+//2. Делить число 1000 на 2 до тех пор, пока не получится число меньше 50. Вывести это число и сколько делений произвели
+// let number;
+// let count=0;
+// number = +prompt("Введите число:", 1000);
+//         do {
+          
+//           number= number/2;
+//           count++;
+     
+
+//         }
+//         while (number>=50);
+//         document.write(count);
+//3. Вывести все числа от 1 до 100, которые кратные указанном пользователем числу.
+// let multiple = +prompt("Введите число:", 2);
+
+// for (let i = 1; i <= 100; i++) {
+//     if (i % multiple === 0) {
+//         document.write(i+" ");
+//     }
+// }
+//4. Вывести каждый 4-й элемент из указанного пользователем диапазона. Пользователь указывает минимальное и максимальное значения диапазона.
+//  let x = prompt("Введите x :", 100);
+//   x = parseInt(x, 10);
+//     let y = prompt("Введите y :", 100);
+//      y = parseInt(y, 10);
+//      for(let i=x;i<y;i++)
+//      {
+//         if (i % 4 === 0) {
+//         document.write(i+" ");
+//         }
+//      }
+
+
+
+//5. Запросить число и проверить, простое ли оно. Простое число делится без остатка только на себя и на единицу
+let x = prompt("Введите простое x :", 100);
+x = parseInt(x, 10);
+let isPrime = true;
+
+for (let i = 0; i < 1000; i++) {
+    if (x % x != 0 && x%1!==0 ) {
+        isPrime = false;
+        break;
+    }
+}
+
+    if (isPrime && x > 1) {
+    document.write(x + " - простое число");
+} else {
+    document.write(x + " - не простое число");
+}
+    </script>
+</body>
+</html>
